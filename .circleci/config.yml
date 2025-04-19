@@ -6,7 +6,6 @@ jobs:
       - image: cimg/node:14.10.1
     steps:
       - checkout
-
       - restore_cache:
           key: v1-dependencies-{{checksum "package.json"}}
 
